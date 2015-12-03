@@ -73,7 +73,7 @@ With webpack, you add a new entry point in `webpack.config.js`.
 ```ruby
 # In [environment].rb or an initializer
 WebpackRails.setup do |config|
-  config.use_dev_server = (Rails.environment.development? || Rails.environment.test?)
+  config.use_dev_server = (Rails.env.development? || Rails.env.test?)
   config.dev_server_port = 8080
 end
 ```
